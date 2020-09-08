@@ -1,4 +1,5 @@
 FROM ubuntu
+WORKDIR /mydir
 RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y curl python 
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl 
 RUN chmod a+x /usr/local/bin/youtube-dl 
