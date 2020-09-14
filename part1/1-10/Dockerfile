@@ -6,4 +6,5 @@ RUN apt install -y nodejs
 RUN git clone https://github.com/docker-hy/frontend-example-docker.git frontend-example-docker
 WORKDIR /root/frontend-example-docker
 RUN npm install
+EXPOSE 5000
 CMD ["npm", "start"]
