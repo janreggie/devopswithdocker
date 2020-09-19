@@ -14,6 +14,10 @@ Note that yes, I used the [fish shell](https://fishshell.com/).
 It's a lot easier for me.
 That's all.
 
+## Skips used
+
+- 1-16
+
 ## License
 
 All code that I have written is under the MIT License.
