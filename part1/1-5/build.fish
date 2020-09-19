@@ -4,13 +4,13 @@
 # In addition, implemented quietness using -qq and assume yes using -y
 # to minimize user interaction.
 docker run -it ubuntu sh -c 'apt -qq update;
-    apt -qqy dist-upgrade;
-    apt -qqy install curl;
-    echo "Input website:";
-    read website;
-    echo "Searching..";
-    sleep 1;
-    curl http://$website;'
+  apt -qqy dist-upgrade;
+  apt -qqy install curl;
+  echo "Input website:";
+  read website;
+  echo "Searching..";
+  sleep 1;
+  curl http://$website;'
 
 # Output when inputting `helsinki.fi` is as follows:
 #

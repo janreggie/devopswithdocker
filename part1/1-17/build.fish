@@ -10,7 +10,7 @@
 # set -l current_directory (dirname (status --current-filename))
 # docker build -t janreggie/go:1.15.2 $current_directory
 # if test $status -ne 0
-#     exit
+#   exit
 # end
 
 # To push
@@ -18,7 +18,7 @@ docker tag janreggie/go:1.15.2 janreggie/go:latest
 docker push janreggie/go:1.15.2
 docker push janreggie/go:latest
 if test $status -ne 0
-    exit
+  exit
 end
 
 # To remove local copies
