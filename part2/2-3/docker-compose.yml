@@ -1,0 +1,19 @@
+version: '3.5'
+
+services:
+  frontend:
+    image: frontend
+    build:
+      context: .
+      dockerfile: frontend.Dockerfile
+    ports:
+      - 5000:5000
+  backend:
+    image: backend
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./logs.txt:/root/backend-example-docker/logs.txt
