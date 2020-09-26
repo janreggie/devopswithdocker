@@ -1,0 +1,9 @@
+[submodule "part2/2-7/frontend"]
+	path = part2/2-7/frontend
+	url = https://github.com/docker-hy/ml-kurkkumopo-frontend.git
+[submodule "part2/2-7/backend"]
+	path = part2/2-7/backend
+	url = https://github.com/docker-hy/ml-kurkkumopo-backend.git
+[submodule "part2/2-7/training"]
+	path = part2/2-7/training
+	url = https://github.com/docker-hy/ml-kurkkumopo-training.git

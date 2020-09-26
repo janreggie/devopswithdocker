@@ -1,0 +1,28 @@
+version: '3.5'
+
+services:
+  frontend:
+    build: ./frontend
+    image: kurkkumopo_frontend
+    ports:
+      - 3000:3000
+  backend:
+    build: ./backend
+    image: kurkkumopo_backend
+    ports:
+      - 5000:5000
+    volumes:
+      - kurkkumopo_backend:/src/model
+    restart: 'unless-stopped'  # refrain from terminating too early before training finishes
+  training:
+    build: ./training
+    image: kurkkumopo_training
+    volumes:
+      - kurkkumopo_backend:/src/model
+      - kurkkumopo_imgs:/src/imgs
+      - kurkkumopo_trainingdata:/src/data
+
+volumes:
+  kurkkumopo_backend:
+  kurkkumopo_imgs:
+  kurkkumopo_trainingdata:
