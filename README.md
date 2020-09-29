@@ -17,6 +17,7 @@ That's all.
 ## Skips used
 
 - 1-16
+- 2-9
 
 ## License
 
